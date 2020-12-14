@@ -27,7 +27,7 @@ pipeline{
             }
         }
         
-        stage('sanity check'){
+        stage('user acceptance'){
             steps{
                 input "is proceed for next stage?"
             }
