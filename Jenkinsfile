@@ -26,9 +26,9 @@ pipeline{
              
             }
         }
-        stage('Sanity check') {
+        stage('PARLIAMENTARY ACTION ZONE') {
             steps {
-                input "i need options?"
+                input "AFFIRMATION FROM HARINDRA"
             }
         }
         stage('tomcat deploy'){
