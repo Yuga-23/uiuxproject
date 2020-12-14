@@ -26,9 +26,10 @@ pipeline{
              
             }
         }
+        
         stage('sanity check') {
-            steps {
-                input "is proceed for next stage?
+            steps{
+                input "is proceed for next stage?"
             }
         }
         stage('tomcat deploy'){
