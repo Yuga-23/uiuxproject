@@ -28,8 +28,9 @@ pipeline{
         }
         
         stage('user acceptance'){
-            timeout(time:45, unit:'seconds')
+            
             steps{
+                timeout(time:45, unit:'seconds')
                 input "is proceed for next stage?"
             }
         }
