@@ -26,6 +26,11 @@ pipeline{
              
             }
         }
+        stage('Sanity check') {
+            steps {
+                input "i need options?"
+            }
+        }
         stage('tomcat deploy'){
          steps{
     sh 'scp /home/ubuntu/workspace/Test-jobs/target/app.war ubuntu@172.31.19.219:/home/ubuntu/appserver/webapps/aaa.war'
